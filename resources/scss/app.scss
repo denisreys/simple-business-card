@@ -1,0 +1,27 @@
+@import 'variables';
+
+:hover {
+    transition: visibility 0s, opacity 0.1s linear;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    line-height: 1;
+    text-decoration: none;
+}
+body {
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+}
+.wrapper {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    max-width: 1150px;
+    margin: auto;
+}
+.container {
+    
+}
