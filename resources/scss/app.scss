@@ -1,5 +1,10 @@
 @import 'variables';
+@import 'images';
+@import 'logo';
 
+* {
+    line-height: 1;
+}
 :hover {
     transition: visibility 0s, opacity 0.1s linear;
 }
@@ -12,6 +17,28 @@ a {
     line-height: 1;
     text-decoration: none;
 }
+.h1, .h2, .h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
+.h1 {
+    font-size: 50px;
+    letter-spacing: 2.5px;
+}
+.h2 {
+    font-size: 35px;
+    letter-spacing: 1.05px;
+    margin-bottom: 30px;
+}
+.h3 {
+    font-size: 22px;
+    letter-spacing: 0.66px;
+    margin-bottom: 15px;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
 body {
     font-family: Lato, sans-serif;
     font-size: 14px;
@@ -23,5 +50,12 @@ body {
     margin: auto;
 }
 .container {
-    
+    & > div {
+        margin-bottom: 100px;
+    }
+}
+.paragraph {
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.48px;
 }
