@@ -28,15 +28,9 @@
             </div>
         </div>
         <div class="main__content__images">
-            <div class="main__content__images__item main__content__images__item--1">
-                <img src="../../../../storage/app/public/image4.png">
-            </div>
-            <div class="main__content__images__item main__content__images__item--2">
-                <img src="../../../../storage/app/public/image11.png">
-            </div>
-            <div class="main__content__images__item main__content__images__item--3">
-                <img src="../../../../storage/app/public/image3.png">
-            </div>
+            <div class="main__content__images__item image image--4"></div>
+            <div class="main__content__images__item image image--11"></div>
+            <div class="main__content__images__item image image--3"></div>
         </div>
     </div>
 </template>
@@ -48,15 +42,15 @@
         justify-content: space-between;
         align-items: stretch;
         gap: 30px;
+        height: 60vh;
 
         .main__content__about {
-            flex-basis: 388px;
+            max-width: 400px;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
 
             .main__content__about__text {
-                flex: 1;
-
                 .main__content__about__text__title {
                     .main__content__about__text__title__video {
                         color: $gray;
@@ -69,9 +63,10 @@
             }
             .main__content__about__location {
                 display: flex;
+                align-items: center;
 
                 .main__content__about__location__text {
-                    padding: 25px 20px;
+                    padding: 0 20px;
                     text-transform: uppercase;
                     display: flex;
                     flex-direction: column;
@@ -91,29 +86,25 @@
             }
         }
         .main__content__images {
+            flex: 1;
             display: grid;
-            grid-template-areas: "a a c c"
-                                 "b b c c";
             gap: $img-gab;
+            grid-template-areas: "a c"
+                                 "b c"
+                                 "b c";
+            max-width: 500px;
 
-            .main__content__images__item img {
-                height: 100%;
-                width: 100%;
+            .main__content__images__item {
+                flex: 1;
             }
-            .main__content__images__item--1 {
-                height: 100%;
-                width: 100%;
+            .image--3 {
+                grid-area: c;
+            }
+            .image--4 {
                 grid-area: a;
             }
-            .main__content__images__item--2 {
-                height: 100%;
-                width: 100%;
+            .image--11 {
                 grid-area: b;
-            }
-            .main__content__images__item--3 {
-                height: 100%;
-                width: 100%;
-                grid-area: c;
             }
         }
     }

@@ -10,10 +10,10 @@
                     <a href="#main" class="nav__item__a">Main</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#portfolio" class="nav__item__a">Portfolio</a>
+                    <a href="#portfolio" class="nav__item__a">What I Do</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#services" class="nav__item__a">Services</a>
+                    <a href="#works" class="nav__item__a">My Works</a>
                 </li>
                 <li class="nav__item">
                     <a href="#contacts" class="nav__item__a">Contacts</a>
@@ -38,10 +38,11 @@
         display: flex;
 
         .nav {
+            display: flex;
             .nav__item {
-                float: left;
-                margin-right: 35px;
-                
+                &:not(:last-child) {
+                    margin-right: 35px;
+                }
                 .nav__item__a {
                     font-weight: 600;
                     letter-spacing: 3.92px;
@@ -51,7 +52,7 @@
         }
     }
     .header__nav__icon {
-        margin-left: 15px;
+        margin-left: 50px;
 
         .header__nav__icon__img {
             width: 20px;

@@ -1,0 +1,199 @@
+@media only screen and (max-width: 1024px) {
+    .h1 {
+        font-size: 42px;
+    }
+    .h2 {
+        font-size: 30px;
+    }
+    .mb-100 {
+        margin-bottom: 70px;
+    }
+    
+    //MAIN
+    .main__content__about__location__img img {
+        width: 70px;
+    }
+    .main__content__about__text__title__video {
+        margin-left: 20px!important;
+    }
+
+    //WHAT I DO
+    .whatido__content, .main__content {
+        height: 50vh!important;
+    }
+    .whatido__content__images {
+        gap: 0!important;
+    }
+    .whatido__content__text, .main__content__about {
+        max-width: 350px!important;
+    }
+    .whatido__content {
+        gap: 30px!important;
+    }
+
+    //WORKS
+    .works__content {
+        gap: 10px!important;
+    }
+    
+    //CONTACTS
+    .contacts__content {
+        align-items: initial!important;
+    }
+    .contacts__content__values {
+        justify-content: space-around!important;
+        flex-direction: column;
+    }
+    .contacts__content__me__text {
+        padding-left: 20px!important;
+    }
+    .contacts__content__me__text__tagline {
+        font-size: 14px!important;
+        letter-spacing: 0.2px!important;
+        line-height: 120%!important;
+    }
+    .contacts__content__me__img img {
+        width: 70px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        max-width: 620px;
+    }
+    .h1 {
+        font-size: 40px;
+    }
+    .h2 {
+        font-size: 28px;
+    }
+    .h3 {
+        font-size: 20px;
+    }
+    .mb-100 {
+        margin-bottom: 50px;
+    }
+
+    //HEADER
+    .header, .whatido__content {
+        flex-direction: column!important;
+    }
+    .header__logo {
+        margin-bottom: 25px;
+    }
+    .header__nav {
+        width: 100%;
+
+        .nav {
+            width: 100%;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .nav__item {
+            margin: 0!important;
+        }
+    }
+    .header__nav__icon {
+        display: none;
+    }
+    //MAIN
+    .main__content {
+        flex-direction: column-reverse;
+    }
+    .main__content, .whatido__content {
+        height: auto!important;
+    }
+    .main__content .main__content__about, .main__content .main__content__images {
+        max-width: 100%!important;
+    }
+    .main__content__images, .works__content {
+        gap: 6px!important;
+    }
+    //WHATIDO
+    .whatido__content__text {
+        max-width: 100%!important;
+        width: 100%;
+    }
+    .whatido__content__images, .main__content__images, .whatido__content__images iframe {
+        min-height: 270px!important;
+        height: 270px;
+    }
+    //MY WORKS
+    .works__content {
+        display: grid;
+        grid-template-areas:
+            "a b c d"
+            "e e e e"!important;
+    }
+    .works__content__item .works__title {
+        display: none;
+    }
+    .works {
+        & > .h2 {
+            display: block!important;
+        }
+    }
+    //CONTACTS
+    .contacts__content {
+        gap: 20px!important;
+    }
+    .contacts__content__me__img img {
+        width: 50px;
+    }
+    .contacts__title {
+        text-align: center;
+    }
+    //FOOTER
+    .footer__copyright {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        padding: 30px 18px;
+    }
+    .h1 {
+        font-size: 38px;
+    }
+    .h2 {
+        font-size: 26px;
+    }
+    .mb-100 {
+        margin-bottom: 40px;
+    }
+    .whatido__content__images, .main__content__images, .whatido__content__images iframe {
+        min-height: 240px!important;
+        height: 240px;
+    }
+    //MAIN  
+    .main__content__about__location__img img {
+        width: 60px;
+    }
+    //HEADER   
+    .header__nav .nav__item__a {
+        letter-spacing: 1.8px!important;
+    }
+    //CONTACTS
+    .contacts__content__values {
+        flex-direction: row;
+        font-size: 16px!important;
+    }
+    .contacts__content__me__text__tagline {
+        letter-spacing: 0.2px !important;
+    }
+    .contacts__content {
+        flex-direction: column-reverse;
+    }
+    .contacts__content__me__img img {
+        width: 100px;
+    }
+    //WORKS
+    .works__content {
+        grid-template-areas:
+            "a b c"
+            "e e e"!important;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .works__content__item--d {
+        display: none;
+    }
+}

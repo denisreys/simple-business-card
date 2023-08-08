@@ -1,6 +1,6 @@
 <template>
-    <div class="works">
-        
+    <div class="works" id="works">
+        <h2 class="works__title h2">My works</h2>
         <div class="works__content">
             <div class="works__content__item works__content__item--a image image--6">
                 <h2 class="works__title h2">My works</h2>
@@ -14,14 +14,13 @@
 </template>
 <style lang="scss">
     @import '../../../../resources/scss/variables';
-
-    .works__title {
-        position: absolute;
-        background-color: #fff;
-        padding-bottom: 30px;
-        z-index: 1;
-        width: 100%;
+    .works {
+        & > .works__title {
+            display: none;
+            text-align: center;
+        }
     }
+    
     .works__content {
         display: grid;
         grid-template-areas: "a b c d"
@@ -34,6 +33,13 @@
             position: relative;
             overflow: hidden;
 
+            & > .works__title {
+                position: absolute;
+                background-color: #fff;
+                padding-bottom: 30px;
+                z-index: 1;
+                width: 100%;
+            }
             img {
                 width: 100%;
                 height: 100%;
